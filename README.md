@@ -28,37 +28,7 @@ Kapsamlı ve güvenilir banka sistemi backend API'si. FastAPI ile geliştirilmi�
 - Otomatik API dokümantasyonu
 - Type hints desteği
 
-## Kurulum
-
-1. Bağımlılıkları yükleyin:
-```bash
-pip install -r requirements.txt
-```
-
-2. Ortam değişkenlerini ayarlayın (.env dosyası oluşturun):
-```
-SECRET_KEY=your-very-secure-secret-key-change-this-in-production-min-32-chars
-DATABASE_URL=sqlite:///./bank_system.db
-ENVIRONMENT=development
-```
-
-3. Sunucuyu başlatın:
-```bash
-python main.py
-```
-
-Sunucu http://localhost:8000 adresinde çalışacaktır.
-
-## API Dokümantasyonu
-
-- Swagger UI: http://localhost:8000/docs
-- ReDoc: http://localhost:8000/redoc
-
 ## API Endpoints
-
-### Kimlik Doğrulama
-- `POST /api/v1/auth/register` - Yeni kullanıcı kaydı
-- `POST /api/v1/auth/login` - Kullanıcı girişi
 
 ### Kullanıcı İşlemleri
 - `GET /api/v1/user/profile` - Kullanıcı profili
@@ -82,12 +52,12 @@ Sunucu http://localhost:8000 adresinde çalışacaktır.
 ```json
 POST /api/v1/auth/register
 {
-  "username": "ahmet_yilmaz",
-  "email": "ahmet@example.com",
+  "username": "a",
+  "email": "a@example.com",
   "password": "GuvenliSifre123",
-  "first_name": "Ahmet",
-  "last_name": "Yılmaz",
-  "phone": "05551234567",
+  "first_name": "A",
+  "last_name": "",
+  "phone": "-",
   "address": "İstanbul, Türkiye"
 }
 ```
@@ -96,7 +66,7 @@ POST /api/v1/auth/register
 ```json
 POST /api/v1/auth/login
 {
-  "username": "ahmet_yilmaz",
+  "username": "A",
   "password": "GuvenliSifre123"
 }
 ```
