@@ -117,13 +117,6 @@ Headers: Authorization: Bearer {token}
 - IP adresi
 - User agent
 
-## Geliştirme
-
-Sistemi geliştirme modunda çalıştırmak için:
-```bash
-uvicorn main:app --reload --host 0.0.0.0 --port 8000
-```
-
 ## Üretim Ortamı
 
 Üretim ortamı için:
@@ -132,7 +125,3 @@ uvicorn main:app --reload --host 0.0.0.0 --port 8000
 3. HTTPS sertifikası ekleyin
 4. Rate limiting ayarlarını yapın
 5. Monitoring ve logging sistemlerini kurun
-
-## Lisans
-
-Bu proje MIT lisansı altında geliştirilmiştir. 
